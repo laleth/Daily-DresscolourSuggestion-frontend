@@ -1,0 +1,27 @@
+h1 {
+    color: rgb(231, 165, 78);
+}
+
+li {
+    color: azure;
+}
+
+.instruction{
+    color: rgb(231, 165, 78);
+}
+
+.btn2 {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: rgb(231, 165, 78);
+    color: beige;
+}
+
+.btn2:hover {
+    
+    background-color: darkgray; 
+}

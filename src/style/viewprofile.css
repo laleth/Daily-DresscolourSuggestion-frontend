@@ -1,0 +1,36 @@
+.prof-container {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.profile-details-container {
+  font-family: 'Arial', sans-serif;
+  color: #333 !important;
+}
+
+.Profile-head {
+  color:rgb(231, 165, 78);
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 25px;
+  color: beige !important;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.loading-message {
+  font-size: 18px;
+  color: beige;
+  text-align: center;
+  margin-top: 20px;
+}

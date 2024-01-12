@@ -1,0 +1,19 @@
+.account-delete{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: beige;
+    margin-left: 600px;
+    margin-top: 100px;
+    
+    
+}
+
+.btn-del-account{
+margin-top: 20px;
+}
+
+.delete-form{
+    width: 300px; 
+  margin-top: 20px;
+}

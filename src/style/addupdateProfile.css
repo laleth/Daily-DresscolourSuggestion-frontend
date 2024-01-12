@@ -1,0 +1,67 @@
+  .profile{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .name-allign{
+    margin-right: 1300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .age-allign{
+    margin-right: 1300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .colorfield-allign{
+    margin-left: 800px;
+    margin-inline-start: auto;
+  }
+
+  .select-color-drop{
+    margin-left: 300px;
+  }
+
+.select-style-drop{
+  margin-left: 300px;
+}
+
+.stylepreff-name-allign{
+  padding-top: 10px;
+  margin-right: 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.color-field-label{
+  margin-right: 230px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  .form-control {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  select.form-control {
+    height: auto; 
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ 
