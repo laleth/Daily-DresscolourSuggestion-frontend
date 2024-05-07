@@ -46,11 +46,10 @@ function Home() {
         if (history.length > 0) {
           const lastEntry = history[history.length - 1];
           setTodaysSuggestion(lastEntry);
-        } else {
-          setNotification("Suggestion is Empty, Please add the profile");
-        }
+        } 
       } else {
         console.error('Failed to fetch history. Status:', response.status);
+        setNotification("Suggestion is Empty, Please add the profile");
       }
     } catch (error) {
       console.error('Error getting history:', error.message);
