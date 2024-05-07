@@ -9,6 +9,7 @@ import Carouselreact from './Carousel';
 function Home() {
   const [suggestedColors, setSuggestedColors] = useState([]);
   const [todaysSuggestion, setTodaysSuggestion] = useState(null);
+  const [notification, setNotification] = useState(null);
 
   const suggestColor = async () => {
     try {
@@ -45,6 +46,8 @@ function Home() {
         if (history.length > 0) {
           const lastEntry = history[history.length - 1];
           setTodaysSuggestion(lastEntry);
+        } else {
+          setNotification("Suggestion is Empty");
         }
       } else {
         console.error('Failed to fetch history. Status:', response.status);
@@ -92,6 +95,9 @@ function Home() {
     <div>
       <NavbarReact />
       <Carouselreact />
+      {notification && (
+        <div className="notification">{notification}</div>
+      )}
       {todaysSuggestion && (
         <div>
           <div className='heading'>
