@@ -11,8 +11,6 @@ function Home() {
   const [todaysSuggestion, setTodaysSuggestion] = useState(null);
   const [notification, setNotification] = useState(null);
 
-  
-
   const suggestColor = async () => {
     try {
       const token = localStorage.getItem('Authorization');
@@ -49,7 +47,7 @@ function Home() {
           const lastEntry = history[history.length - 1];
           setTodaysSuggestion(lastEntry);
         } else {
-         setNotification("Suggestion is Empty, Please add the profile")
+          setNotification("Suggestion is Empty, Please add the profile");
         }
       } else {
         console.error('Failed to fetch history. Status:', response.status);
@@ -98,7 +96,7 @@ function Home() {
       <NavbarReact />
       <Carouselreact />
       {notification && (
-        <div className="notification">{notification}</div>
+        <div className="notification"><span className="empty-notification">{notification}</span></div>
       )}
       {todaysSuggestion && (
         <div>

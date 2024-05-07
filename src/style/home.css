@@ -84,4 +84,9 @@
 
 .notification{
   color: antiquewhite;
+
+}
+
+.empty-notification {
+  color: white; /* Change the color to your desired color */
 }
