@@ -5,11 +5,19 @@ import { API } from '../Global';
 import "../style/home.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carouselreact from './Carousel';
+import { notification } from 'antd';
 
 function Home() {
   const [suggestedColors, setSuggestedColors] = useState([]);
   const [todaysSuggestion, setTodaysSuggestion] = useState(null);
-  const [notification, setNotification] = useState(null);
+
+  const openNotification = (type, message, description) => {
+    notification[type]({
+      message,
+      description,
+    });
+  };
+  
 
   const suggestColor = async () => {
     try {
@@ -47,12 +55,10 @@ function Home() {
           const lastEntry = history[history.length - 1];
           setTodaysSuggestion(lastEntry);
         } 
-      } else {
-        console.error('Failed to fetch history. Status:', response.status);
-        setNotification("Suggestion is Empty, Please add the profile");
-      }
+      } 
     } catch (error) {
       console.error('Error getting history:', error.message);
+      openNotification('error', 'Login Error', 'There was an error during login.');
     }
   }
 
@@ -94,9 +100,6 @@ function Home() {
     <div>
       <NavbarReact />
       <Carouselreact />
-      {notification && (
-        <div className="notification"><span className="empty-notification">{notification}</span></div>
-      )}
       {todaysSuggestion && (
         <div>
           <div className='heading'>
