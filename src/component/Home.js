@@ -35,6 +35,7 @@ function Home() {
       }
     } catch (error) {
       console.error('Error suggesting color:', error.message);
+      openNotification('error', 'Error suggesting color', 'Please create the profile.');
     }
   }
 
@@ -58,7 +59,6 @@ function Home() {
       } 
     } catch (error) {
       console.error('Error getting history:', error.message);
-      openNotification('error', 'Login Error', 'There was an error during login.');
     }
   }
 
