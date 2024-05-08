@@ -36,6 +36,7 @@ function Home() {
     } catch (error) {
       console.error('Error suggesting color:', error.message);
       openNotification('error', 'Error suggesting color', 'Please create the profile.');
+      alert("Please add profile")
     }
   }
 
